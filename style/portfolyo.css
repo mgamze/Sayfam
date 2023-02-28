@@ -1,0 +1,204 @@
+@import url('https://fonts.googleapis.com/css2?family=Karla:ital,wght@0,200;0,300;0,400;0,700;1,200;1,300;1,400&family=Montserrat:wght@200;300;400;500;700;900&display=swap');
+        
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Montserrat', sans-serif;
+        }
+        
+        nav {
+            background-color: rgb(0, 0, 0);
+            width: 100%;
+            overflow: hidden;
+            position: fixed;
+            display: flex;
+            padding-left: 20px;
+        
+        }
+        
+        nav .logo {
+            text-align: left;
+            padding-left: 20px;
+        }
+        
+        nav .logo a {
+            font-family: 'Karla', sans-serif;
+            font-size: xx-large;
+            letter-spacing: 0px;
+            color: #F15A24;
+            text-decoration: none;
+        
+        }
+        
+        nav .orta {
+            width: 100%;
+        }
+        
+        nav ul {
+            list-style: none;
+            display: flex;
+            justify-content: center;
+        }
+        
+        nav ul li{
+            padding: 10px 20px 20px 20px;
+            
+        }
+        
+        nav ul li a {
+            text-decoration: none;
+            color: rgb(255, 255, 255);
+            padding: 10px;
+            letter-spacing: 1px;
+            font-weight: 300;
+            position: relative;
+            font-family: 'Montserrat', sans-serif;
+        }
+        
+        nav ul li a:hover::after {
+            width: 100%;
+        }
+        
+        nav ul li a::after {
+            content: '';
+            position: absolute;
+            background-color: rgb(255, 255, 255);
+            height: 1px;
+            top: 30px;
+            left: 0;
+            bottom: 0;
+            width: 10px;
+            transition: all 1s;
+        }
+        
+        body {
+            background-color: rgb(211, 210, 210);
+            width: 100%;
+        }
+
+        .flex{
+            display: flex;
+            align-items: center;
+            width: 100%;
+        }
+
+        .gorseller {
+            width: 70%;
+            background-color: black;
+            margin-left: 20px;
+            margin-top: 40px;
+            padding: 30px 30px;
+        }
+
+        .gorseller .box {
+            display: inline-block;
+            width: 49%;
+        }
+
+        .gorseller .images {
+            display: inline-flex;
+            width: 100%;
+            background-color: rgb(211, 210, 210) ;
+            padding: 40px 20px 40px 20px;
+            margin: 8px 0;
+        }
+        .images img{
+            width: 100%;
+           
+        }
+
+        h6{
+            color: white;
+            background-color: #F15A24;
+            width: fit-content;
+            padding: 2px;
+        }
+
+        .yazilar {
+
+            background-color: #F15A24;
+            width: 29%;
+            height: min-content;
+            border-radius: 10%;
+            position: relative;
+            right: 20px;
+            padding: 20px;
+
+        }
+
+        #kucuk {
+            font-size: small;
+        }
+
+        #buyuk {
+            text-align: center;
+            font-size: small;
+            font-weight: 500;
+        }
+
+        .yazilar a {
+            text-decoration: none;
+            color: white;
+        }
+
+        .yazilar a:hover {
+            color: black;
+        }
+
+        .yazilar span {
+            text-align: center;
+        }
+
+
+        .material-symbols-outlined {
+            font-variation-settings:
+            'FILL' 0,
+            'wght' 400,
+            'GRAD' 0,
+            'opsz' 48
+        }
+
+        .images img:hover {
+            transition: all 1s;
+            transform: scale(1.1);
+
+        }
+
+        @media (max-width: 700px) {
+            .images img:hover{
+                transform: none;
+            }
+            .row, nav {   
+            flex-direction: column;
+            }
+
+            .flex {
+                width: 100%;
+                height: 100%;
+                
+
+            }
+
+            .gorseller {
+                width: 100%;
+                margin-top: 180px;
+                position: unset;
+                margin-right: 20px;
+            }
+
+            .gorseller .box {
+                width: 100%;
+            }
+
+            .gorseller .box .images {
+                padding: 0;
+            }
+
+            .yazilar {
+                width: 100%;
+                position: unset;
+                border-radius: 0%;
+            }
+            
+        }

@@ -1,0 +1,192 @@
+@import url('https://fonts.googleapis.com/css2?family=Karla:ital,wght@0,200;0,300;0,400;0,700;1,200;1,300;1,400&family=Montserrat:wght@200;300;400;500;700;900&display=swap');
+        
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+}
+
+nav {
+    background-color: rgb(0, 0, 0);
+    width: 100%;
+    overflow: hidden;
+    position: fixed;
+    display: flex;
+    padding-left: 20px;
+
+}
+
+nav .logo {
+    text-align: left;
+    padding-left: 20px;
+}
+
+nav .logo a {
+    font-family: 'Karla', sans-serif;
+    font-size: xx-large;
+    letter-spacing: 0px;
+    color: #F15A24;
+    text-decoration: none;
+
+}
+
+nav .orta {
+    width: 100%;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+}
+
+nav ul li{
+    padding: 10px 20px 20px 20px;
+    
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+    padding: 10px;
+    letter-spacing: 1px;
+    font-weight: 300;
+    position: relative;
+    font-family: 'Montserrat', sans-serif;
+}
+
+nav ul li a:hover::after {
+    width: 100%;
+}
+
+nav ul li a::after {
+    content: '';
+    position: absolute;
+    background-color: rgb(255, 255, 255);
+    height: 1px;
+    top: 30px;
+    left: 0;
+    bottom: 0;
+    width: 10px;
+    transition: all 1s;
+}
+
+body {
+    background-color: rgb(211, 210, 210);
+    width: 100%;
+    background-image: url(../galeri/il_arka.jpg);
+    background-size: cover;
+}
+
+.container {
+    display: flex;
+
+}
+
+.sol{
+    width: 50%;
+    background-color: black;
+    padding: 100px 0px;
+    
+}
+
+.foto {
+    border-radius: 50%;
+    width: 200px;
+    height: 200px;
+    background-image: url(../galeri/ben.jpeg);
+    background-position: center;
+    background-size: cover;
+    border: 1px solid white;
+    margin: auto;
+    margin-bottom: 50px;
+}
+
+.yazi {
+    color: white;
+    text-align: center;
+    line-height: 30px;
+}
+
+.material-symbols-outlined {
+    font-variation-settings:
+    'FILL' 0,
+    'wght' 400,
+    'GRAD' 0,
+    'opsz' 48;
+}
+
+.iletisim {
+    text-align: center;
+}
+
+.iletisim a {
+    margin-left: 5px;
+    margin-right: 5px;
+
+}
+
+.sag {
+    width: 100%;
+    margin-top: 1%;
+    
+}
+
+.kapsayici {
+
+    width: 50%;
+    position: relative;
+    left: 20%;
+    top: 25px;
+}
+
+form {
+    width: 100%;
+    margin-top: 3rem;
+
+}
+
+form textarea { width: 100%;}
+form textarea { resize: none; margin-top: 10px; margin-bottom: 10px;}
+
+input, select, textarea {
+
+    float: right;
+}
+
+input{
+    padding: 2px;
+}
+
+@media (max-width: 700px) {
+    .row, nav {   
+    flex-direction: column;
+    }
+
+    .container{
+        width: 100%;
+        flex-direction: column;
+    }
+
+
+    .sol {
+        position: inherit;
+        width: 100%;
+        height: 100%;
+        margin-top: 150px;
+        padding-bottom: 20px;
+    }
+
+    .sag{
+        width: 100%;
+        background-color: #F15A24;
+        padding-bottom: 30px;
+        margin-top: 0;
+    }
+
+    body {
+        background-image: none;
+    }
+
+}
