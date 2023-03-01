@@ -183,6 +183,7 @@ input{
         background-color: #F15A24;
         padding-bottom: 30px;
         margin-top: 0;
+        z-index: -1;
     }
 
     body {
